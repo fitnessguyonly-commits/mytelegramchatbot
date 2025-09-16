@@ -17,17 +17,13 @@ OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 
 SYSTEM_PROMPT = "You are a helpful AI assistant. Always provide a response. If you cannot answer a question directly due to safety reasons or lack of information, you must explain that you cannot answer and state the reason why. Do not provide an empty response."
 
+# A curated list of currently active and reliable free models on OpenRouter.
 MODELS = [
     "mistralai/mistral-7b-instruct:free",
     "google/gemma-7b-it:free",
-    "nousresearch/nous-hermes-2-mixtral-8x7b-dpo:free",
     "openchat/openchat-7b:free",
     "huggingfaceh4/zephyr-7b-beta:free",
-    "openrouter/cinematika-7b:free",
-    "cognitivecomputations/dolphin-mixtral-8x7b:free",
-    "gryphe/gryphe-mistral-7b-v2:free",
-    "undi95/toppy-m-7b:free",
-    "rwkv/rwkv-5-world-3b:free"
+    "undi95/toppy-m-7b:free"
 ]
 
 client = openai.OpenAI(
